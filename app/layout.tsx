@@ -24,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta name="google" content="notranslate" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-y-hidden! text-white`}>{children}</body>
     </html>
   );
 }
